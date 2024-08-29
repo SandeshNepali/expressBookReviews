@@ -8,7 +8,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/customer", session({ secret: "fingerprint_customer", resave: true, saveUninitialized: true }))
+app.use("/customer", session({ secret: "sandeshnepali", resave: true, saveUninitialized: true }))
 
 // Update the authentication middleware
 app.use("/customer/auth/*", function auth(req, res, next) {
